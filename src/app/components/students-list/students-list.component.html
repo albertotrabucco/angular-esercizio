@@ -1,0 +1,11 @@
+<h1>app.students-list</h1>
+<div class="student-list">
+        <div *ngFor="let student of students">
+                <button [class.selected]="student === selectedStudent" type="button" (click)="onSelect(student)">
+                        <span class="id">{{student.id}}</span>
+                        <br>
+                        <span class="name">{{student.name}}</span>
+                </button>
+        </div>
+        
+</div>
